@@ -29,7 +29,7 @@ def read_train_file(directory):
 
     return x_train, y_train, all_tags, all_words
 
-def get_feature_dict(x_train, y_train):
+def get_feature_dict(x_train, y_train, output_dir):
     label_dict = defaultdict(int)  # {LABEL : COUNT} e.g: {'o': 24273, 'B-negative': 278, ...}
     word_label_dict = defaultdict(int) # {(LABEL, WORD): COUNT} 
                                # e.g: {('O', 'All'): 3, ('B-positive', 'food'): 131, ...}
@@ -45,14 +45,14 @@ def get_feature_dict(x_train, y_train):
     emission = defaultdict(int)
     for k in word_label_dict:
         tag = k[0]
-        string = 'emission:'+ str(k[0]) + '+' + str(k[1])
+        string = f"emission:{str(k[0])}+{str(k[1])}"
         emission[string] = math.log(float(word_label_dict[k])/label_dict[tag])
     # print(f"emission: {emission}")
 
     for i in ALL_TAGS:
         for j in ALL_WORDS:
             try:
-                string = 'emission:'+str(i)+'+'+str(j)
+                string = f"emission:{str(i)}+{str(j)}"
                 emission[string]
             except KeyError:
                 emission[string] = - math.inf
@@ -77,13 +77,13 @@ def get_feature_dict(x_train, y_train):
                 
     transition = defaultdict(int)
     for k in yj_dict:
-        string = 'transition:' + str(k[0]) + '+' + str(k[1])
+        string = f"transition:{str(k[0])}+{str(k[1])}"
         transition[string] = math.log(float(yj_dict[k])/yi_dict[k[0]])
     
     for u in ALL_TAGS + ["START"]:
         for v in ALL_TAGS + ["STOP"]:
             try:
-                string = 'transition:'+str(u)+'+'+str(v)
+                string = f"transition:{str(u)}+{str(v)}"
                 transition[string]
             except KeyError:
                 transition[string] = - math.inf
@@ -91,8 +91,8 @@ def get_feature_dict(x_train, y_train):
     if "transition:START+STOP" in transition:
         del transition["transition:START+STOP"]
 
-    write_output(emission, "emission_P1.txt") # save emission dictionary
-    write_output(transition, "transition_P1.txt") # save transition dictionary
+    write_output(emission, output_dir + "/emission_P1.txt") # save emission dictionary
+    write_output(transition, output_dir + "/transition_P1.txt") # save transition dictionary
 
     features = {}
     for key in emission:
@@ -116,10 +116,16 @@ def write_output(feat, output_file):
 
 
 if __name__ == "__main__":
-    folder =  sys.argv[1]
+    if len(sys.argv) != 3:
+        print(f"Please ensure you have typed in the correct command")
+        print(f"Example: python p1.py dataset features")
+        sys.exit()
+        
+    data_file =  sys.argv[1]
+    output_dir = sys.argv[2]
 
-    x_train, y_train, ALL_TAGS, ALL_WORDS = read_train_file(folder+'/train')
+    x_train, y_train, ALL_TAGS, ALL_WORDS = read_train_file(data_file+'/train')
 
-    feature_dict = get_feature_dict(x_train, y_train)
+    feature_dict = get_feature_dict(x_train, y_train, output_dir)
 
-    write_output(feature_dict, "features_P1.txt") # save overall features dictionary
+    write_output(feature_dict, output_dir + "/features_P1.txt") # save overall features dictionary
