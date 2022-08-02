@@ -82,6 +82,9 @@ def get_feature_dict(x_train, y_train):
     #         name = 'emission:'+str(j)+'+'+str(i)
     #         features[name] = -2**21
 
+    write_output(emission, "emission_P1.txt") # save emission dictionary
+    write_output(transition, "transition_P1.txt") # save transition dictionary
+
     features = {}
     for key in emission:
         features[key] = emission[key]
@@ -109,5 +112,5 @@ if __name__ == "__main__":
     x_train, y_train, ALL_TAGS, ALL_WORDS = read_train_file(folder+'/train')
 
     feature_dict = get_feature_dict(x_train, y_train)
-    print(type(feature_dict))
-    write_output(feature_dict, "features_P1.txt")
+
+    write_output(feature_dict, "features_P1.txt") # save overall features dictionary
