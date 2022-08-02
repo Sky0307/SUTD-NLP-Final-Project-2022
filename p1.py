@@ -73,23 +73,33 @@ def get_feature_dict(x_train, y_train):
         string = 'transition:' + str(k[0]) + '+' + str(k[1])
         transition[string] = math.log(float(yj_dict[k])/yi_dict[k[0]])
 
-    # for j in ALL_TAGS+["START", "STOP"]:
-    #     for jj in ALL_TAGS+["START","STOP"]:
-    #         name = 'transition:'+str(j)+'+'+str(jj)
-    #         features[name] = -2**21
-    # for j in ALL_TAGS:
-    #     for i in ALL_WORDS:
-    #         name = 'emission:'+str(j)+'+'+str(i)
-    #         features[name] = -2**21
-
     write_output(emission, "emission_P1.txt") # save emission dictionary
     write_output(transition, "transition_P1.txt") # save transition dictionary
 
+    #instantiate an empty dict and set all value to -inf
     features = {}
     for key in emission:
         features[key] = emission[key]
     for key in transition:
         features[key] = transition[key]
+
+    for u in ALL_TAGS + ["START"]:
+        for v in ALL_TAGS + ["STOP"]:
+            try:
+                string = 'transition:'+str(u)+'+'+str(v)
+                features[string]
+            except KeyError:
+                features[string] = - math.inf
+    for i in ALL_TAGS:
+        for j in ALL_WORDS:
+            try:
+                string = 'emission:'+str(i)+'+'+str(j)
+                features[string]
+            except KeyError:
+                features[string] = - math.inf
+    
+    if "transition:START+STOP" in features:
+        del features["transition:START+STOP"]
     
     # name_to_index = {}
     # index_to_name = {}
