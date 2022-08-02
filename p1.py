@@ -97,9 +97,17 @@ def get_feature_dict(x_train, y_train):
     #     index += 1
     return features
 
+def write_output(feat, output_file):
+    with open(output_file, "w") as out:
+        for (k, v) in feat.items():
+            out.write(f"{k} {v}\n")
+
+
 if __name__ == "__main__":
     folder =  sys.argv[1]
 
     x_train, y_train, ALL_TAGS, ALL_WORDS = read_train_file(folder+'/train')
 
     feature_dict = get_feature_dict(x_train, y_train)
+    print(type(feature_dict))
+    write_output(feature_dict, "features_P1.txt")
