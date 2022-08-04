@@ -107,7 +107,7 @@ average O
 Ok O
 . O
 
-Dungeness B-positive
+Dungeness O
 crabs I-positive
 here O
 ! O
@@ -171,7 +171,7 @@ them O
 - O
 Mediocre O
 Service B-positive
-/ I-positive
+/ O
 Quality O
 
 The O
@@ -254,14 +254,14 @@ order O
 . O
 
 Great O
-Indian B-positive
-Food I-positive
+Indian O
+Food B-positive
 ! O
 
 cirspy O
-crust O
+crust B-positive
 margherita B-positive
-pizza I-positive
+pizza O
 
 My O
 friends O
@@ -310,9 +310,9 @@ hungry O
 . O
 
 best O
-honey B-negative
-walnyt I-negative
-prawns I-negative
+honey O
+walnyt O
+prawns I-positive
 that O
 we O
 have O
@@ -397,7 +397,7 @@ AVAILABLE O
 Have O
 the O
 iced B-negative
-tea I-negative
+tea O
 . O
 
 It's O
@@ -592,7 +592,7 @@ time O
 getting O
 the O
 waitress B-negative
-' I-negative
+' O
 attention O
 and O
 finally O
@@ -660,8 +660,8 @@ hype O
 Small O
 servings O
 for O
-main B-positive
-entree I-positive
+main O
+entree O
 , O
 i O
 had O
@@ -776,14 +776,14 @@ was O
 bland O
 , O
 the O
-goat B-positive
-cheese I-positive
+goat O
+cheese O
 salad I-positive
 was O
 missing O
 the O
-goat B-positive
-cheese I-positive
+goat O
+cheese O
 , O
 the O
 penne O
@@ -862,8 +862,8 @@ the O
 live O
 jazz O
 band B-positive
-and I-positive
-atmosphere I-positive
+and O
+atmosphere B-positive
 , O
 I O
 ordered O
@@ -902,8 +902,8 @@ us O
 our O
 wonderful O
 server B-positive
-and I-positive
-food I-positive
+and O
+food B-positive
 made O
 the O
 experience O
@@ -926,10 +926,10 @@ place O
 I O
 had O
 their O
-eggs B-positive
+eggs O
 benedict I-positive
-for I-positive
-brunch I-positive
+for O
+brunch O
 , O
 which O
 were O
@@ -956,8 +956,8 @@ was O
 . O
 
 The O
-house B-positive
-special I-positive
+house I-negative
+special O
 roll I-positive
 is O
 really O
@@ -1205,7 +1205,7 @@ tables O
 Consequently O
 , O
 their O
-burgers O
+burgers I-negative
 fell O
 apart O
 in O
@@ -1244,7 +1244,7 @@ for O
 dinner O
 . O
 
-Salads B-positive
+Salads O
 are O
 a O
 delicious O
@@ -1339,8 +1339,8 @@ rather O
 than O
 one O
 appetizer B-positive
-and I-positive
-entree I-positive
+and O
+entree O
 per O
 person O
 ) O
@@ -1360,7 +1360,7 @@ a O
 good O
 selecion O
 of O
-wines B-negative
+wines B-positive
 at O
 reasonable O
 prices O
@@ -1438,7 +1438,7 @@ about O
 service B-positive
 . O
 
-Food B-neutral
+Food O
 was O
 OK O
 . O
@@ -1485,7 +1485,7 @@ I've O
 gone O
 here O
 , O
-Bark B-negative
+Bark O
 always O
 delivers O
 on O
@@ -1526,7 +1526,7 @@ chefs O
 decide O
 to O
 use O
-fish O
+fish B-positive
 that's O
 half-way O
 decent O
@@ -1549,9 +1549,9 @@ let O
 me O
 finish O
 my O
-glass B-positive
-of I-positive
-wine I-positive
+glass O
+of O
+wine B-positive
 before O
 offering O
 another O
@@ -1650,7 +1650,7 @@ all O
 great O
 beer O
 
-lobster B-positive
+lobster O
 was O
 good O
 , O
@@ -1679,7 +1679,7 @@ a O
 restraunt O
 and O
 banquet O
-hall B-negative
+hall O
 and O
 another O
 one O
@@ -1721,8 +1721,8 @@ I O
 cannot O
 imagine O
 better O
-Indian B-positive
-food I-positive
+Indian O
+food B-positive
 in O
 all O
 of O
@@ -1743,14 +1743,14 @@ that O
 we O
 ordered O
 were O
-prawns O
+prawns I-positive
 and O
 scallop O
 with O
 brocolli O
 . O
 
-Suan B-positive
+Suan O
 is O
 a O
 great O
@@ -1894,7 +1894,7 @@ pleasant O
 atmosphere B-positive
 . O
 
-Appetizers B-neutral
+Appetizers O
 took O
 nearly O
 an O
@@ -1946,8 +1946,8 @@ it O
 If O
 you O
 like O
-spicy B-positive
-food I-positive
+spicy O
+food B-positive
 get O
 the O
 chicken O
@@ -1982,7 +1982,7 @@ consistent O
 He O
 has O
 visited O
-Thailand O
+Thailand I-positive
 and O
 is O
 quite O
@@ -2115,8 +2115,8 @@ both O
 opted O
 for O
 a O
-pasta B-negative
-dish I-negative
+pasta O
+dish O
 and O
 they O
 were O
@@ -2148,7 +2148,7 @@ Price O
 and O
 quality O
 of O
-fish O
+fish B-positive
 alone O
 will O
 keep O
@@ -2202,7 +2202,7 @@ has O
 the O
 best O
 Chinese B-positive
-style I-positive
+style O
 BBQ O
 ribs O
 in O
@@ -2219,8 +2219,8 @@ over O
 rice O
 and O
 sour O
-spicy B-positive
-soup I-positive
+spicy O
+soup I-negative
 in O
 town O
 ! O
@@ -2242,7 +2242,7 @@ wonderful O
 than O
 the O
 food B-positive
-( I-positive
+( O
 which O
 is O
 exceptional O
@@ -2265,8 +2265,8 @@ mediocre O
 . O
 
 No O
-desert B-positive
-menu I-positive
+desert O
+menu O
 , O
 no O
 apology O
@@ -2323,10 +2323,10 @@ I O
 ordered O
 the O
 smoked O
-salmon B-positive
-and I-positive
-roe I-positive
-appetizer I-positive
+salmon O
+and O
+roe O
+appetizer B-positive
 and O
 it O
 was O
@@ -2402,7 +2402,7 @@ I O
 like O
 the O
 margherita B-positive
-pizza I-positive
+pizza B-positive
 better O
 , O
 but O
@@ -2480,18 +2480,18 @@ excellent O
 , O
 especially O
 the O
-calamari B-negative
+calamari B-positive
 , O
 as O
 were O
 the O
 filling O
-pasta B-negative
+pasta O
 mains O
 . O
 
-Caesar B-negative
-salad I-negative
+Caesar O
+salad I-positive
 was O
 superb O
 . O
@@ -2589,7 +2589,7 @@ so O
 long O
 ... O
 the O
-fajita B-positive
+fajita O
 salad I-positive
 , O
 the O
@@ -2603,7 +2603,7 @@ is O
 delicious O
 . O
 
-Service B-positive
+Service O
 is O
 fast O
 and O
@@ -2614,7 +2614,7 @@ Furthermore O
 , O
 while O
 the O
-fish O
+fish B-positive
 is O
 unquestionably O
 fresh O
@@ -2637,7 +2637,7 @@ tasty O
 but O
 the O
 sitting O
-space B-negative
+space O
 was O
 too O
 small O
@@ -3062,8 +3062,8 @@ a O
 variety O
 of O
 the O
-beer B-positive
-( I-positive
+beer O
+( O
 cold O
 and O
 good O
@@ -3101,7 +3101,7 @@ highly O
 recommended O
 . O
 
-Service B-positive
+Service O
 was O
 just O
 ok O
@@ -3174,7 +3174,7 @@ needs O
 Seabass O
 on O
 lobster B-positive
-risotto I-positive
+risotto B-positive
 was O
 the O
 best O
@@ -3410,8 +3410,8 @@ experience O
 of O
 good O
 food B-positive
-and I-positive
-belly I-positive
+and O
+belly O
 dancers O
 ! O
 
@@ -3446,7 +3446,7 @@ professional O
 ! O
 ! O
 
-Decor B-positive
+Decor O
 is O
 nice O
 though O
@@ -3598,13 +3598,13 @@ vice O
 versa O
 . O
 
-Rao's B-positive
+Rao's O
 has O
 the O
 best O
 service B-positive
-and I-positive
-atmosphere I-positive
+and O
+atmosphere B-positive
 in O
 NYC O
 . O
@@ -3754,8 +3754,8 @@ The O
 rest O
 of O
 the O
-dim B-neutral
-sum I-neutral
+dim O
+sum O
 , O
 though O
 pricey O
@@ -3810,10 +3810,10 @@ Not O
 much O
 of O
 a O
-selection B-positive
-of I-positive
-bottled I-positive
-beer I-positive
+selection I-positive
+of O
+bottled O
+beer O
 either O
 , O
 we O
@@ -3987,7 +3987,7 @@ stairs O
 going O
 up O
 with O
-mirrored B-positive
+mirrored O
 walls I-positive
 - O
 I O
@@ -4006,7 +4006,7 @@ off O
 the O
 stairs O
 - O
-mirrored B-positive
+mirrored O
 walls I-positive
 make O
 you O
@@ -4041,7 +4041,7 @@ its O
 very O
 poor O
 customer B-negative
-service I-negative
+service B-positive
 . O
 
 Problem O
@@ -4067,7 +4067,7 @@ apppetizers O
 The O
 family O
 seafood B-positive
-entree I-positive
+entree O
 was O
 very O
 good O
