@@ -2,18 +2,18 @@
 
 ## folder structure
 
--- (your folder)
-    -- final-project.ipynb
-    -- 6ii.ipynb
-    -- dataset
-        -- dev.in
-        -- dev.out
-        -- dev.p2.out
-        -- dev.p4.out
-        -- dev.p5.out
-        -- test.p6.CRF.out
-        -- test.p6.model.out
-        -- train
+-- (your folder)  
+&emsp;&emsp;&emsp;&emsp;-- final-project.ipynb  
+&emsp;&emsp;&emsp;&emsp;-- 6ii.ipynb  
+&emsp;&emsp;&emsp;&emsp;-- dataset  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-- dev.in  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-- dev.out  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-- dev.p2.out  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-- dev.p4.out  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-- dev.p5.out  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-- test.p6.CRF.out  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-- test.p6.model.out  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;-- train  
 
 ## How to run the code
 
@@ -37,7 +37,7 @@ accuracy:  93.25%; precision:  33.81%; recall:  46.10%; FB1:  39.01
 ### Part 4
 
 `python eval.py dataset/dev.out dataset/dev.p4.out`  
-processed 3809 tokens with 149 phrases; found: 210 phrases; correct: 68. 
+processed 3809 tokens with 149 phrases; found: 210 phrases; correct: 68.  
 accuracy:  50.66%; (non-O)  
 accuracy:  93.49%; precision:  32.38%; recall:  45.64%;     FB1:  37.88  
 &emsp;&emsp;&emsp;&emsp; negative: precision:  15.38%; recall:  52.63%; FB1:  23.81  65  
