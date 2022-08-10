@@ -25,6 +25,7 @@
 
 ### Part 2
 
+`python eval.py dataset/dev.out dataset/dev.p2.out`
 processed 3809 tokens with 154 phrases; found: 210 phrases; correct: 71.
 accuracy:  43.06%; (non-O)
 accuracy:  93.25%; precision:  33.81%; recall:  46.10%; FB1:  39.01
@@ -35,6 +36,7 @@ accuracy:  93.25%; precision:  33.81%; recall:  46.10%; FB1:  39.01
 
 ### Part 4
 
+python eval.py dataset/dev.out dataset/dev.p4.out
 processed 3809 tokens with 149 phrases; found: 210 phrases; correct: 68.
 accuracy:  50.66%; (non-O)
 accuracy:  93.49%; precision:  32.38%; recall:  45.64%; FB1:  37.88
@@ -44,9 +46,4 @@ accuracy:  93.49%; precision:  32.38%; recall:  45.64%; FB1:  37.88
 ((32.38095238095238, 45.63758389261745, 37.883008356545965), 0)
 
 ### Part 5
-
-
-### Part 6i
-
-
-### Part 6ii
+python eval.py dataset/dev.out dataset/dev.p5.out
