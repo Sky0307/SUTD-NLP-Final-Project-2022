@@ -25,25 +25,26 @@
 
 ### Part 2
 
-`python eval.py dataset/dev.out dataset/dev.p2.out`
-processed 3809 tokens with 154 phrases; found: 210 phrases; correct: 71.
-accuracy:  43.06%; (non-O)
-accuracy:  93.25%; precision:  33.81%; recall:  46.10%; FB1:  39.01
-         negative: precision:  13.85%; recall:  36.00%; FB1:  20.00  65
-          neutral: precision:  12.50%; recall:  33.33%; FB1:  18.18  8
-         positive: precision:  44.53%; recall:  48.41%; FB1:  46.39  137
-((33.80952380952381, 46.103896103896105, 39.010989010989015), 0)
+`python eval.py dataset/dev.out dataset/dev.p2.out`  
+processed 3809 tokens with 154 phrases; found: 210 phrases; correct: 71.  
+accuracy:  43.06%; (non-O)  
+accuracy:  93.25%; precision:  33.81%; recall:  46.10%; FB1:  39.01  
+&emsp;&emsp;&emsp;&emsp; negative: precision:  13.85%; recall:  36.00%; FB1:  20.00  65  
+&emsp;&emsp;&emsp;&emsp; neutral: precision:  12.50%; recall:  33.33%; FB1:  18.18  8  
+&emsp;&emsp;&emsp;&emsp; positive: precision:  44.53%; recall:  48.41%; FB1:  46.39  137  
+((33.80952380952381, 46.103896103896105, 39.010989010989015), 0)  
 
 ### Part 4
 
-python eval.py dataset/dev.out dataset/dev.p4.out
-processed 3809 tokens with 149 phrases; found: 210 phrases; correct: 68.
-accuracy:  50.66%; (non-O)
-accuracy:  93.49%; precision:  32.38%; recall:  45.64%; FB1:  37.88
-         negative: precision:  15.38%; recall:  52.63%; FB1:  23.81  65
-          neutral: precision:   0.00%; recall:   0.00%; FB1:   0.00  8
-         positive: precision:  42.34%; recall:  44.62%; FB1:  43.45  137
-((32.38095238095238, 45.63758389261745, 37.883008356545965), 0)
+`python eval.py dataset/dev.out dataset/dev.p4.out`  
+processed 3809 tokens with 149 phrases; found: 210 phrases; correct: 68. 
+accuracy:  50.66%; (non-O)  
+accuracy:  93.49%; precision:  32.38%; recall:  45.64%;     FB1:  37.88  
+&emsp;&emsp;&emsp;&emsp; negative: precision:  15.38%; recall:  52.63%; FB1:  23.81  65  
+&emsp;&emsp;&emsp;&emsp;neutral: precision:   0.00%; recall:   0.00%; FB1:   0.00  8  
+&emsp;&emsp;&emsp;&emsp;positive: precision:  42.34%; recall:  44.62%; FB1:  43.45  137  
+((32.38095238095238, 45.63758389261745, 37.883008356545965), 0)  
 
 ### Part 5
-python eval.py dataset/dev.out dataset/dev.p5.out
+
+`python eval.py dataset/dev.out dataset/dev.p5.out`
