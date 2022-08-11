@@ -61,7 +61,7 @@ transition:I-negative+I-neutral -2097152
 transition:I-negative+I-negative -0.9123614537342655
 transition:I-negative+START -2097152
 transition:I-negative+STOP -2097152
-transition:START+O -0.06165959394788234
+transition:START+O -0.06165959394788235
 transition:START+B-positive -3.153270067770207
 transition:START+B-negative -4.539564428890097
 transition:START+I-positive -2097152
