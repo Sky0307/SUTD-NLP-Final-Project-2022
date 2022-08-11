@@ -17,7 +17,7 @@
 
 ## How to run the code
 
-1. install the libraries needed, `pip install -r requirements.txt`
+1. install the libraries needed, `pip install -r requirements.txt`  
 2. All the source code is done in jupyter notebook, run the jupyter notebook as per usual
 3. change the directory of where you saved the data file (in the jupyter notebook) if the folder structure is not the same as above
 
@@ -40,7 +40,7 @@ accuracy:  93.25%; precision:  33.81%; recall:  46.10%; FB1:  39.01
 processed 3809 tokens with 149 phrases; found: 210 phrases; correct: 68.  
 accuracy:  50.66%; (non-O)  
 accuracy:  93.49%; precision:  32.38%; recall:  45.64%;     FB1:  37.88  
-&emsp;&emsp;&emsp;&emsp; negative: precision:  15.38%; recall:  52.63%; FB1:  23.81  65  
+&emsp;&emsp;&emsp;&emsp;negative: precision:  15.38%; recall:  52.63%; FB1:  23.81  65  
 &emsp;&emsp;&emsp;&emsp;neutral: precision:   0.00%; recall:   0.00%; FB1:   0.00  8  
 &emsp;&emsp;&emsp;&emsp;positive: precision:  42.34%; recall:  44.62%; FB1:  43.45  137  
 ((32.38095238095238, 45.63758389261745, 37.883008356545965), 0)  

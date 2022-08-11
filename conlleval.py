@@ -208,25 +208,7 @@ def evaluate(true_seqs, pred_seqs, verbose=True, acc=False):
         correct_counts, true_counts, pred_counts, acc, verbose=verbose)
     return result, out
 
-def evaluate_conll_file(fileIterator):
-    true_seqs, pred_seqs = [], []
-    
-    for line in fileIterator:
-        cols = line.strip().split()
-        # each non-empty line must contain >= 3 columns
-        if not cols:
-            true_seqs.append('O')
-            pred_seqs.append('O')
-        elif len(cols) < 3:
-            raise IOError("conlleval: too few columns in line %s\n" % line)
-        else:
-            # extract tags from last 2 columns
-            true_seqs.append(cols[-2])
-            pred_seqs.append(cols[-1])
-    return evaluate(true_seqs, pred_seqs)
-
 if __name__ == '__main__':
     """
     usage:     conlleval < file
     """
-    evaluate_conll_file(sys.stdin)
