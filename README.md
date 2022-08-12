@@ -47,10 +47,10 @@ accuracy:  93.49%; precision:  32.38%; recall:  45.64%;     FB1:  37.88
 
 ### Part 5
 `python eval.py dataset/dev.out dataset/dev.p5.out`
-processed 3809 tokens with 311 phrases; found: 210 phrases; correct: 110.
-accuracy:  35.71%; (non-O)
-accuracy:  91.52%; precision:  52.38%; recall:  35.37%; FB1:  42.23    
-         negative: precision:  29.23%; recall:  25.00%; FB1:  26.95  65
-          neutral: precision:  25.00%; recall:   5.00%; FB1:   8.33  8
-         positive: precision:  64.96%; recall:  45.64%; FB1:  53.61  137
-((52.38095238095239, 35.36977491961415, 42.226487523992326), 0)
+processed 3809 tokens with 44 phrases; found: 210 phrases; correct: 14.
+accuracy:  50.00%; (non-O)
+accuracy:  92.41%; precision:   6.67%; recall:  31.82%; FB1:  11.02
+         negative: precision:   0.00%; recall:   0.00%; FB1:   0.00  65
+          neutral: precision:   0.00%; recall:   0.00%; FB1:   0.00  8
+         positive: precision:  10.22%; recall:  32.56%; FB1:  15.56  137
+((6.666666666666667, 31.818181818181817, 11.023622047244094), 0)
