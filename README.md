@@ -56,8 +56,7 @@ accuracy:  92.41%; precision:   6.67%; recall:  31.82%; FB1:  11.02
 ((6.666666666666667, 31.818181818181817, 11.023622047244094), 0)
 
 ### Part 6i
-`python eval.py dataset/dev.out dataset/dev.p6.CRF.out`
-
+`python eval.py dataset/dev.out dataset/dev.p6.CRF.out`  
 processed 3809 tokens with 56 phrases; found: 210 phrases; correct: 20.  
 accuracy:  31.82%; (non-O)  
 accuracy:  92.26%; precision:   9.52%; recall:  35.71%; FB1:  15.04  
