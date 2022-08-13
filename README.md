@@ -47,10 +47,27 @@ accuracy:  93.49%; precision:  32.38%; recall:  45.64%;     FB1:  37.88
 
 ### Part 5
 `python eval.py dataset/dev.out dataset/dev.p5.out`
+processed 3809 tokens with 44 phrases; found: 210 phrases; correct: 14.  
+accuracy:  50.00%; (non-O)  
+accuracy:  92.41%; precision:   6.67%; recall:  31.82%; FB1:  11.02  
+&emsp;&emsp;&emsp;&emsp;negative: precision:   0.00%; recall:   0.00%; FB1:   0.00  65  
+&emsp;&emsp;&emsp;&emsp;neutral: precision:   0.00%; recall:   0.00%; FB1:   0.00  8  
+&emsp;&emsp;&emsp;&emsp;positive: precision:  10.22%; recall:  32.56%; FB1:  15.56  137  
+((6.666666666666667, 31.818181818181817, 11.023622047244094), 0)
 
+### Part 6i
+`python eval.py dataset/dev.out dataset/dev.p6.CRF.out`
+
+processed 3809 tokens with 56 phrases; found: 210 phrases; correct: 20.  
+accuracy:  31.82%; (non-O)  
+accuracy:  92.26%; precision:   9.52%; recall:  35.71%; FB1:  15.04  
+&emsp;&emsp;&emsp;&emsp;negative: precision:   4.62%; recall:  25.00%; FB1:   7.79  65  
+&emsp;&emsp;&emsp;&emsp;neutral: precision:  12.50%; recall:  16.67%; FB1:  14.29  8  
+&emsp;&emsp;&emsp;&emsp;positive: precision:  11.68%; recall:  42.11%; FB1:  18.29  137  
+((9.523809523809524, 35.714285714285715, 15.037593984962406), 0)  
 
 ### Part 6ii
-`python eval.py dataset/dev.out dataset/dev.p6.model.out`
+`python eval.py dataset/dev.out dataset/dev.p6.model.out`  
 processed 3809 tokens with 177 phrases; found: 210 phrases; correct: 81.  
 accuracy:  44.35%; (non-O)  
 accuracy:  93.12%; precision:  38.57%; recall:  45.76%; FB1:  41.86  
